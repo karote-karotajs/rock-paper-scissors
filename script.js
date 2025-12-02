@@ -17,7 +17,7 @@ function getComputerChoice() {
 computerChoice = getComputerChoice() // Izveidojam globālu mainīgo, kas ir return value no funkcijas get, tas pats line 23
 
 function getHumanChoice() { // Izveidot loģiku, pēc kuras cilvēks var izvēlēties akmeni, šķēres vai papīru
-    return humanChoice = prompt("Rock, paper or scissors?")
+    return prompt("Rock, paper or scissors?")
 }
 
 humanChoice = getHumanChoice()
@@ -36,28 +36,6 @@ function playRound(humanChoice, computerChoice) {
             break;
         default:
             console.log("Tu zaudēji!")
-    }
-
-    switch(humanChoice === "paper") {
-        case computerChoice === "rock":
-            console.log("Tu uzvarēji!")
-            break;
-        case computerChoice === "scissors":
-            console.log("Tu zaudēji!")
-            break;
-        default:
-            console.log("Neizšķirts")
-    }
-
-    switch (humanChoice === "scissors") {
-        case computerChoice === "rock":
-            console.log("Tu zaudēji!")
-            break;
-        case computerChoice === "scissors":
-            console.log("Neizšķirts")
-            break;
-        default:
-            console.log("Tu uzvarēji!")
     }
 }
 
